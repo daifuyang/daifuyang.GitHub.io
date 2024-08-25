@@ -1,0 +1,31 @@
+---
+import { menuItems } from "@/const";
+const linkClass = "block p-4 text-sm font-medium";
+const leftRightWidth = "w-40";
+---
+
+<header class="bg-white border-b">
+  <div class="flex items-center container mx-auto">
+    <div class={leftRightWidth}>
+      <h1 class="font-semibold text-lg">
+        <a href="#">My Blog</a>
+      </h1>
+    </div>
+    <nav class="flex-1">
+      <ul class="flex gap-x-4 justify-center">
+        {
+          menuItems.map((item) => {
+            return (
+              <li>
+                <a class={linkClass} href={item.link}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+    <div class={leftRightWidth}></div>
+  </div>
+</header>
