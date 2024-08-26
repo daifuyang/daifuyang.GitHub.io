@@ -4,7 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 
 const pageSize = 10;
 
-const getBlogPosts = async () => {
+export const getBlogPosts = async () => {
   const blogPosts = (await getCollection("blog")).sort((a, b) => {
     return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
   });
