@@ -2,61 +2,70 @@
 import Layout from "@/layouts/Layout.astro";
 
 const cards = [
-{
+  {
     title: "AI工具",
     items: [
       {
         title: "chatgpt",
-        link: "https://chatgpt.com/",
+        link: "https://chatgpt.com/"
       },
       {
         title: "kimi",
-        link: "https://kimi.moonshot.cn/",
+        link: "https://kimi.moonshot.cn/"
       },
       {
         title: "v0",
-        link: "https://v0.dev/",
+        link: "https://v0.dev/"
       },
       {
         title: "ideogram",
-        link: "https://ideogram.ai/",
-      },
-    ],
-  },  
-{
+        link: "https://ideogram.ai/"
+      }
+    ]
+  },
+  {
+    title: "图标库",
+    items: [
+      {
+        title: "heroicons",
+        link: "https://heroicons.com/"
+      }
+    ]
+  },
+  {
     title: "前端框架",
     items: [
       {
         title: "nextjs",
-        link: "https://nextjs.org/",
+        link: "https://nextjs.org/"
       },
       {
         title: "astro",
-        link: "https://astro.build/",
-      },
-    ],
+        link: "https://astro.build/"
+      }
+    ]
   },
   {
     title: "ui框架",
     items: [
       {
         title: "tailwindcss",
-        link: "https://tailwindcss.com/",
+        link: "https://tailwindcss.com/"
       },
       {
         title: "ant design",
-        link: "https://ant-design.antgroup.com/index-cn",
+        link: "https://ant-design.antgroup.com/index-cn"
       },
       {
         title: "shadcn/ui",
-        link: "https://ui.shadcn.com/",
-      },
-    ],
-  },
+        link: "https://ui.shadcn.com/"
+      }
+    ]
+  }
 ];
 ---
 
-<Layout title="专栏-戴富阳的博客">
+<Layout title="导航-戴富阳的博客">
   <div class="container mx-auto mt-8">
     {
       cards.map((card) => {

@@ -1,7 +1,7 @@
 ---
 title: "利用astro快速搭建个人博客"
 desc: "还在为搭建个人博客而烦恼吗？快来学习astro吧！"
-date: 2023-04-23 12:14:00
+date: "2024-08-25 12:14:00"
 category: "astro"
 tags: ["astro"]
 ---
